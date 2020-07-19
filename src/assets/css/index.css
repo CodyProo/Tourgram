@@ -1,0 +1,81 @@
+@font-face {
+    src: url('../fonts/IRANSansWeb.ttf');
+    font-family: 'iransans';
+}
+
+@font-face {
+    src: url('../fonts/IRANSansWeb_Medium.ttf');
+    font-family: 'iransansmedium';
+}
+
+@font-face {
+    src: url('../fonts/IRANYekanBold.ttf');
+    font-family: 'iran-yekan';
+}
+
+@font-face {
+    src: url('../fonts/IRANYekanLight.ttf');
+    font-family: 'iran-yekan-light';
+}
+
+@font-face {
+    src: url('../fonts/IRANYekanMedium.ttf');
+    font-family: 'iran-yekan-medium';
+}
+
+@font-face {
+    src: url('../fonts/IRANYekanRegular.ttf');
+    font-family: 'iran-yekan-regular';
+}
+
+@font-face {
+    src: url('../fonts/OCR-A.woff');
+    font-family: 'iran-orc';
+}
+
+@font-face {
+    src: url('../fonts/SourceSansPro-Bold.ttf');
+    font-family: 'iransansbold';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+.Appbar-logo {
+    font-size: 18px;
+    font-family: 'iransansbold';
+    letter-spacing: 3.6px;
+    color: #150a49;
+}
+
+.Appbar-avatar {
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.noti-sign::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #ff6565;
+    border: 2px solid #fff;
+}
