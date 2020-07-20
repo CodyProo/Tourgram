@@ -73,9 +73,164 @@ body {
     position: absolute;
     top: 25%;
     right: 35%;
-    height: 4px;
-    width: 4px;
+    height: 5px;
+    width: 5px;
     border-radius: 50%;
     background: #ff6565;
     border: 2px solid #fff;
+}
+
+.stepper {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background: #efefef 0% 0% no-repeat padding-box;
+    border: 1px solid #e1e1e1;
+    padding: 50px 0;
+}
+
+.stepper .step {
+    padding-bottom: 35px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+
+.stepper .step .status {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #b6b6c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+    font-family: 'iransans';
+    color: #b6b6c3;
+}
+
+.stepper .step .step-body {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    transition: 0.3s all;
+}
+
+.stepper .step .step-body .step-label {
+    font-size: 16px;
+    font-family: 'iransans';
+    color: #b6b6c3;
+}
+
+.stepper .step .step-body .step-content span {
+    font-size: 14px;
+    font-family: 'iransans';
+    color: #b6b6c3;
+    padding-top: 7px;
+}
+
+.stepper .step .step-body svg {
+    display: none !important;
+}
+
+.stepper .step .step-body.complete svg {
+    display: flex !important;
+    color: #8d91a8;
+    font-size: 13px;
+    margin-top: 5px;
+    transition: 0.3s all;
+    margin-left: 5px;
+}
+
+.stepper .step .step-body.complete .icon-stepper {
+    margin-right: -20px;
+}
+
+.stepper .step.active .status {
+    color: #8d91a8;
+    border: 2px solid #8d91a8;
+}
+
+.stepper .step.active .step-body .step-label,
+.stepper .step.active .step-body .step-content span,
+.stepper .step .step-body.complete .step-label,
+.stepper .step .step-body.complete .step-content span {
+    color: #8d91a8 !important;
+    font-family: 'iran-yekan-medium';
+    transition: 0.6s all;
+}
+
+.stepper .step .step-body.complete .step-content {
+    margin-left: 50px !important;
+}
+
+.stepper .register-logo h3 {
+    color: #656181;
+    font-size: 18px;
+    font-family: 'iran-yekan-regular';
+}
+
+.stepper .register-logo svg {
+    font-size: 16px;
+    color: #656181;
+    margin-left: 15px;
+}
+
+.stepper .step.active .status,
+.stepper .step.complete .status {
+    border: 2px solid #8d91a8;
+    color: #8d91a8;
+}
+
+.edit-container .MuiInputLabel-shrink,
+.add-cart .MuiInputLabel-shrink {
+    transform-origin: top right !important;
+}
+
+.edit-container .MuiSvgIcon,
+.add-cart .MuiSvgIcon {
+    left: 0 !important;
+    right: unset !important;
+}
+
+.selectInput .MuiSvgIcon-root.MuiSelect-icon {
+    left: 0 !important;
+    right: unset !important;
+}
+
+.edit-container .MuiInputLabel-root,
+.add-cart .MuiInputLabel-root {
+    left: unset;
+    right: 0;
+    font-size: 12px;
+    font-family: 'iran-yekan-light';
+    color: #8d91a8;
+}
+
+.edit-container input,
+.edit-container textarea,
+.edit-container .MuiSelect-select.MuiSelect-select {
+    font-size: 14px;
+    font-family: 'iransans';
+    color: #656181;
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+
+.add-cart input {
+    font-size: 14px;
+    font-family: 'iran-yekan-light';
+    color: #656181;
+}
+
+.dialog-icon {
+    font-size: 20px !important;
+    color: #acacbb;
+    cursor: pointer;
+}
+
+
+.MuiMenuItem-root {
+    font-family: 'iran-yekan-regular' !important;
+    font-size: 13px !important;
 }

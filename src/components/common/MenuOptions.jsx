@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import {
 	faCog,
 	faPowerOff,
@@ -69,9 +70,13 @@ const useStyles = makeStyles({
 	MenuItemsText: {
 		fontSize: 14,
 		fontFamily: 'iran-yekan-regular',
+		cursor: 'pointer',
 	},
 	textMuted: {
 		color: '#4d4f5c',
+	},
+	noneDecoration: {
+		textDecoration: 'none',
 	},
 });
 
@@ -102,7 +107,6 @@ const MenuOptions = ({ isOpen, toggle }) => {
 								</Box>
 							</ListItemText>
 						</ListItem>
-						{/*  */}
 						<ListItem className={[styles.menuListItems, styles.MenuItems]}>
 							<Box display='flex' flexDirection='column'>
 								<Box display='flex' alignItems='center'>
@@ -113,14 +117,14 @@ const MenuOptions = ({ isOpen, toggle }) => {
 										/>
 									</ListItemIcon>
 									<ListItemText>
-										{/* <Link
-										to='/EditAccount/AccountingInformation'
-										className='link'> */}
-										<Typography
-											className={[styles.MenuItemsText, styles.textMuted]}>
-											پروفایل کاری من
-										</Typography>
-										{/* </Link> */}
+										<Link
+											to='/edit/account/buisness'
+											className={styles.noneDecoration}>
+											<Typography
+												className={[styles.MenuItemsText, styles.textMuted]}>
+												پروفایل کاری من
+											</Typography>
+										</Link>
 									</ListItemText>
 								</Box>
 								<Box display='flex' alignItems='center' pt={1}>

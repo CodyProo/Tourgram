@@ -11,6 +11,7 @@ import {
 import { makeStyles } from '@material-ui/styles';
 import AvatarURL from 'assets/images/avatar2.png';
 import NotificationContainer from './NotificationContainer';
+import NoList from './NoList';
 
 const useStyles = makeStyles({
 	moreDetails: {
@@ -69,7 +70,10 @@ const ChatNotification = ({ isOpen }) => {
 							پیام ها
 						</Typography>
 					</ListItem>
-					<ListItem className={styles.listStyles}>
+					<ListItem>
+						<NoList />
+					</ListItem>
+					{/* <ListItem className={styles.listStyles}>
 						<ListItemAvatar>
 							<Avatar className={styles.avatarURLStyles} src={AvatarURL} />
 						</ListItemAvatar>
@@ -133,7 +137,7 @@ const ChatNotification = ({ isOpen }) => {
 						<ListItemText>
 							<h3 className={styles.moreDetails}>نمایش بیشتر</h3>
 						</ListItemText>
-					</ListItem>
+					</ListItem> */}
 				</List>
 			</NotificationContainer>
 		);
